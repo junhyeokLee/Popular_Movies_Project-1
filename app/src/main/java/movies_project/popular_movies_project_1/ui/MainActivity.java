@@ -39,10 +39,9 @@ public class MainActivity extends AppCompatActivity {
         tabLayout = findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(viewPager);
         tabLayout.getTabAt(0).setText(R.string.popular);
-//        tabLayout.getTabAt(1).setText(R.string.top_rated);
+        tabLayout.getTabAt(1).setText(R.string.top_rated);
+        tabLayout.getTabAt(2).setText(R.string.favorite);
 //        tabLayout.getTabAt(2).setText(R.string.favorite);
-
-
 
         if(!internetConnected()){
             Toast.makeText(MainActivity.this, "Please ensure your internet is connection and try again..", Toast.LENGTH_LONG).show();
